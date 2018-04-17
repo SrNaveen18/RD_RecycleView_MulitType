@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/base_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.naveen.recycviewprt.MainActivity">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/rootCardView"
+        app:cardUseCompatPadding="true"
+
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/sampleImage"
+            android:scaleType="fitXY"
+            android:layout_gravity="bottom"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="News"
+                android:paddingTop="16dp"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ImD STAR Tech"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:paddingBottom="2dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/recyclerView">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/btnHome"
+        android:text="Toolbar Hide Screen"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/colorPrimary"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/imgArrow"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/ic_arrow_back_white_24dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/ic_accessibility_black_24px"
+        android:id="@+id/frmVideo">
+
+    </FrameLayout>
+
+</FrameLayout>
